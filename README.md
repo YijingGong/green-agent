@@ -10,9 +10,13 @@ src/
 ├─ executor.py    # A2A request handling
 ├─ agent.py       # Your agent implementation goes here
 └─ messenger.py   # A2A messaging utilities
+tests/
+└─ test_agent.py  # Agent tests
 Dockerfile        # Docker configuration
 pyproject.toml    # Python dependencies
-uv.lock           # Locked dependencies
+.github/
+└─ workflows/
+   └─ test-and-publish.yml # CI workflow
 ```
 
 ## Getting Started
@@ -22,6 +26,8 @@ uv.lock           # Locked dependencies
 2. **Implement your agent** - Add your agent logic to [`src/agent.py`](src/agent.py)
 
 3. **Configure your agent card** - Fill in your agent's metadata (name, skills, description) in [`src/server.py`](src/server.py)
+
+4. **Write your tests** - Add custom tests for your agent in [`tests/test_agent.py`](tests/test_agent.py)
 
 ## Running Locally
 
@@ -59,7 +65,9 @@ uv run pytest --agent-url http://localhost:9009
 
 ## Publishing
 
-The repository includes a GitHub Actions workflow that automatically builds, tests, and publishes a Docker image of your agent to GitHub Container Registry:
+The repository includes a GitHub Actions workflow that automatically builds, tests, and publishes a Docker image of your agent to GitHub Container Registry.
+
+If your agent needs API keys or other secrets, add them in Settings → Secrets and variables → Actions → Repository secrets. They'll be available as environment variables during CI tests.
 
 - **Push to `main`** → publishes `latest` tag:
 ```
