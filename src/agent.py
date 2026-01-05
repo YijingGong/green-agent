@@ -15,9 +15,9 @@ class EvalRequest(BaseModel):
 
 class Agent:
     # Fill in: list of required participant roles, e.g. ["pro_debater", "con_debater"]
-    required_roles: list[str] = []
+    required_roles: list[str] = ["equation_extractor"]
     # Fill in: list of required config keys, e.g. ["topic", "num_rounds"]
-    required_config_keys: list[str] = []
+    required_config_keys: list[str] = ["num_paper", "xml_path"] 
 
     def __init__(self):
         self.messenger = Messenger()
@@ -33,6 +33,10 @@ class Agent:
             return False, f"Missing config keys: {missing_config_keys}"
 
         # Add additional request validation here
+        try:
+            int(request.config["num_paper"])
+        except Exception as e:
+            return False, f"Can't parse num_paper: {e}"
 
         return True, "ok"
 
