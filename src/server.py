@@ -24,16 +24,27 @@ def main():
     # See: https://a2a-protocol.org/latest/tutorials/python/3-agent-skills-and-card/
     
     skill = AgentSkill(
-        id="",
-        name="",
-        description="",
-        tags=[],
-        examples=[]
+        id="evaluate-papers",
+        name="Evaluate Papers",
+        description="Evaluates a participant on a set of 3 papers.",
+        tags=["evaluation", "benchmark"],
+        examples=[
+            """{
+  "participants": {"participant": "http://remote-agent"},
+  "config": {
+    "papers": [
+      {"paper_id": "p1", "system": "", "prompt": "...", "xml": "", "gold_output": "out1"},
+      {"paper_id": "p2", "system": "", "prompt": "...", "xml": "", "gold_output": "out2"},
+      {"paper_id": "p3", "system": "", "prompt": "...", "xml": "", "gold_output": "out3"}
+    ]
+  }
+}"""
+        ]
     )
 
     agent_card = AgentCard(
-        name="",
-        description="",
+        name="Paper Evaluator Agent",
+        description="A Green Agent that evaluates participant agents on paper-based tasks.",
         url=args.card_url or f"http://{args.host}:{args.port}/",
         version='1.0.0',
         default_input_modes=['text'],
