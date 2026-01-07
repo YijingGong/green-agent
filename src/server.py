@@ -30,7 +30,7 @@ def main():
         tags=["evaluation", "benchmark"],
         examples=[
             """{
-  "participants": {"participant": "http://remote-agent"},
+  "participants": {"participant": "http://remote-agent"}, # placeholder URL. It has to be a different port from the server running the green agent.
   "config": {
     "papers": [
       {"paper_id": "p1", "system": "", "prompt": "...", "xml": "", "gold_output": "out1"},
