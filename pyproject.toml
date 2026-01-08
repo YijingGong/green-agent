@@ -7,6 +7,9 @@ requires-python = ">=3.13"
 dependencies = [
     "a2a-sdk[http-server]>=0.3.20",
     "bert-score>=0.3.13",
+    "litellm>=1.80.12",
+    "loguru>=0.7.3",
+    "openai>=2.14.0",
     "pydantic>=2.12.5",
     "python-dotenv>=1.0.0",
     "uvicorn>=0.38.0",

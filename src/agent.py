@@ -98,7 +98,7 @@ class Agent:
         
         logger.info(f"Initialized agent with input_dir={self.input_dir}, output_dir={self.output_dir}")
 
-    def validate_request(self, request: EvalRequest) -> tuple[bool, str]:
+    def validate_request(self, request: EvalRequest) -> tuple[bool, str]: 
         """Validate the evaluation request.
         
         Args:

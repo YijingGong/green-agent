@@ -31,13 +31,6 @@ def main():
         examples=[
             """{
   "participants": {"participant": "http://remote-agent"}, # placeholder URL. It has to be a different port from the server running the green agent.
-  "config": {
-    "papers": [
-      {"paper_id": "p1", "system": "", "prompt": "...", "xml": "", "gold_output": "out1"},
-      {"paper_id": "p2", "system": "", "prompt": "...", "xml": "", "gold_output": "out2"},
-      {"paper_id": "p3", "system": "", "prompt": "...", "xml": "", "gold_output": "out3"}
-    ]
-  }
 }"""
         ]
     )
