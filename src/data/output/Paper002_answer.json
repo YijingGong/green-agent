@@ -1,0 +1,275 @@
+{
+  "paper": {
+    "doi": "10.3168/jds.2022-22211",
+    "title": "A meta-analysis of effects of 3-nitrooxypropanol on methane production, yield, and intensity in dairy cattle",
+    "journal": "Journal of Dairy Science",
+    "publisher": "Elsevier",
+    "url": "https://doi.org/10.3168/jds.2022-22211",
+    "year": 2023,
+    "authors": [
+      "Ermias Kebreab",
+      "André Bannink",
+      "Eleanor May Pressman",
+      "Nicola Walker",
+      "Alexios Karagiannis",
+      "Sanne van Gastelen",
+      "Jan Dijkstra"
+    ],
+    "abstract": "Ruminants, particularly dairy and beef cattle, contribute to climate change through mostly enteric methane emissions. Several mitigating options have been proposed, including the feed additive 3-nitrooxypropanol (3-NOP). The objectives of this study were to explain the variability in the mitigating effect of 3-NOP and to investigate the interaction between diet composition and 3-NOP dose, using meta-analytical approaches. Data from 13 articles (14 experiments) met the selection criteria for inclusion in the meta-analysis, and 48 treatment means were used for the analysis. Mean differences were calculated as 3-NOP treatment mean minus control treatment mean and then expressed as a percentage of the control mean. Three types of models were developed: (1) one including 3-NOP dose, overall mean, and individual covariate; (2) a combination of neutral detergent fiber (NDF), 3-NOP dose, and overall mean; and (3) one selected model from all combinations of up to 5 covariates, which were compared using a leave-one-out cross validation method. Models including only 3-NOP dose resulted in a significant reduction of 32.7%, 30.9%, and 32.6% for CH 4  production (g/d), yield (g/kg dry matter intake), and intensity (g/kg energy-corrected milk), respectively, at an average 3-NOP dose of 70.5 mg/kg dry matter (DM). The greater the NDF content in the diet, the lower the reduction efficiency for a given 3-NOP dose. For 10 g/kg DM increase in NDF content from its mean (329 g of NDF/kg of DM) the 3-NOP effect on CH 4  production was impaired by 0.633%, the 3-NOP effect on CH 4  yield by 0.647%, and the 3-NOP effect on CH 4  intensity by 0.723%. The analysis based on leave-one-out cross validation showed an increase in NDF and crude fat content reduces efficacy of 3-NOP and an increase in 3-NOP dose increases efficacy. A 1% (10 g/kg) DM decrease in dietary NDF content from its mean may increase the efficacy of 3-NOP in reducing CH 4  production by 0.915%. A 1% (10 g/kg DM) decrease in dietary crude fat content from its mean enhances the efficacy of 3-NOP on CH 4  production by 3.080% at a given dose and NDF level. For CH 4  yield, next to 3-NOP dose, dietary NDF content and dietary crude fat content were included in the selected model, but also dietary starch content with an opposite direction to NDF and crude fat. The effect of 3-NOP dose on CH 4  intensity was similar to its effect on CH 4  production, whereas the effect of dietary NDF content was slightly lower. Expanding the previously published models with the newly available data published from trials since then improved model performance, hence demonstrating the value of regularly updating meta-analyses if a wider range of data becomes available.",
+    "summary": "This meta-analysis quantifies how the feed additive 3-nitrooxypropanol (3-NOP) mitigates enteric methane emissions from dairy cattle and how this mitigation is modified by diet composition. Using 48 treatment means from 14 experiments, the authors develop regression equations that express the relative change in methane production (g/d), yield (g/kg DMI), and intensity (g/kg ECM) as a function of 3-NOP dose and dietary neutral detergent fiber, crude fat, and starch contents (all centered around their mean values in the database). The selected models show that increasing 3-NOP dose increases methane reduction, whereas higher dietary NDF and crude fat reduce 3-NOP efficacy and higher starch can enhance efficacy, providing practical guidance for optimizing diet formulation when using 3-NOP in dairy systems.",
+    "keywords": [
+      "3-nitrooxypropanol",
+      "dairy",
+      "meta-analysis",
+      "methane"
+    ],
+    "study_year": null,
+    "geolocation": [],
+    "domains": [
+      "enteric_methane",
+      "dairy_production",
+      "nutrition"
+    ],
+    "production_system": [],
+    "species": [
+      "dairy_cow"
+    ],
+    "breed": [],
+    "dairy_product": [],
+    "microbe_species": [],
+    "license_type": null,
+    "tdm_allowed": null
+  },
+  "equations": [
+    {
+      "equation_id": "eq1",
+      "label_in_paper": null,
+      "section": "RESULTS AND DISCUSSION",
+      "page": null,
+      "latex": "Change_{CH_4\\,prod} (\\%) = -32.4 - 0.282 \\times (\\text{3\\text{-}NOP} - 70.5) + 0.915 \\times (\\text{NDF} - 32.9) + 3.080 \\times (\\text{crude fat} - 4.2)",
+      "equation_type": "regression",
+      "domain": "enteric_methane",
+      "target_quantity": {
+        "symbol": "Change_{CH_4\\,prod}",
+        "name": "relative change in methane production",
+        "description": "Relative mean difference (treatment minus control, % of control) in daily enteric methane production due to 3-NOP supplementation",
+        "unit": "% of control",
+        "scale": "group_mean"
+      },
+      "variables": [
+        {
+          "symbol": "3\\text{-}NOP",
+          "name": "3-nitrooxypropanol dose",
+          "unit": "mg/kg DM"
+        },
+        {
+          "symbol": "NDF",
+          "name": "neutral detergent fiber concentration",
+          "unit": "% DM"
+        },
+        {
+          "symbol": "crude\\ fat",
+          "name": "crude fat concentration",
+          "unit": "% DM"
+        }
+      ],
+      "parameters": [
+        {
+          "symbol": "Intercept",
+          "name": "overall mean effect at mean 3-NOP, NDF and crude fat",
+          "value": -32.4
+        },
+        {
+          "symbol": "b_{3\\text{-}NOP}",
+          "name": "slope for 3-NOP dose (centered at 70.5 mg/kg DM)",
+          "value": -0.282
+        },
+        {
+          "symbol": "b_{NDF}",
+          "name": "slope for NDF concentration (centered at 32.9 % DM)",
+          "value": 0.915
+        },
+        {
+          "symbol": "b_{CF}",
+          "name": "slope for crude fat concentration (centered at 4.2 % DM)",
+          "value": 3.08
+        }
+      ],
+      "applicability": "Selected meta-regression model for relative mean difference in methane production (g/d) between 3-NOP and control treatments, based on 48 treatment means from 14 experiments in dairy cattle. All predictors are centered at the database means (3-NOP dose 70.5 mg/kg DM, NDF 329 g/kg DM, crude fat 42 g/kg DM). Applicable primarily to lactating dairy cows fed diets within the ranges summarized in Table 1 (e.g., NDF 265–435 g/kg DM, crude fat 28–58 g/kg DM, 3-NOP 37–137 mg/kg DM).",
+      "model_performance": "Selected according to smallest root mean square error under leave-one-out cross-validation among models including up to 5 covariates (see Table 2). RMSE = 6.94%.",
+      "text_context": "The selected model for relative mean difference in CH4 production expresses the percentage change in daily methane emissions as a function of deviation of 3-NOP dose, dietary NDF, and crude fat from their mean values in the meta-analysis dataset, showing that higher NDF and crude fat reduce 3-NOP efficacy while higher 3-NOP doses enhance it.",
+      "links": {
+        "figure_ids": [
+          "Figure 2"
+        ],
+        "table_ids": [
+          "Table 1",
+          "Table 2"
+        ],
+        "supplement_ids": []
+      },
+      "explanation": "This regression equation quantifies how 3-NOP dose and diet composition jointly determine the percentage change in methane production relative to a control diet. It is centered on the mean conditions of the database, so the intercept approximates the typical reduction at average 3-NOP, NDF and fat levels, while the slopes describe how moving away from those means alters 3-NOP efficacy. This structure is directly useful for predicting expected methane mitigation in new dairy rations within the observed nutrient ranges.",
+      "notes": "Outcome is a treatment-control contrast expressed as percentage of control methane production. All explanatory variables are centered to their means as given in Table 1. Equation derived from a meta-analysis of treatment means rather than individual cow data; extrapolation beyond the reported dietary and dose ranges is not recommended."
+    },
+    {
+      "equation_id": "eq2",
+      "label_in_paper": null,
+      "section": "RESULTS AND DISCUSSION",
+      "page": null,
+      "latex": "Change_{CH_4\\,yield} (\\%) = -30.8 - 0.226 \\times (\\text{3\\text{-}NOP} - 70.5) + 0.906 \\times (\\text{NDF} - 32.9) + 3.871 \\times (\\text{crude fat} - 4.2) - 0.337 \\times (\\text{starch} - 21.1)",
+      "equation_type": "regression",
+      "domain": "enteric_methane",
+      "target_quantity": {
+        "symbol": "Change_{CH_4\\,yield}",
+        "name": "relative change in methane yield",
+        "description": "Relative mean difference (treatment minus control, % of control) in methane yield per unit of dry matter intake due to 3-NOP supplementation",
+        "unit": "% of control",
+        "scale": "group_mean"
+      },
+      "variables": [
+        {
+          "symbol": "3\\text{-}NOP",
+          "name": "3-nitrooxypropanol dose",
+          "unit": "mg/kg DM"
+        },
+        {
+          "symbol": "NDF",
+          "name": "neutral detergent fiber concentration",
+          "unit": "% DM"
+        },
+        {
+          "symbol": "crude\\ fat",
+          "name": "crude fat concentration",
+          "unit": "% DM"
+        },
+        {
+          "symbol": "starch",
+          "name": "starch concentration",
+          "unit": "% DM"
+        }
+      ],
+      "parameters": [
+        {
+          "symbol": "Intercept",
+          "name": "overall mean effect at mean 3-NOP, NDF, crude fat, and starch",
+          "value": -30.8
+        },
+        {
+          "symbol": "b_{3\\text{-}NOP}",
+          "name": "slope for 3-NOP dose (centered at 70.5 mg/kg DM)",
+          "value": -0.226
+        },
+        {
+          "symbol": "b_{NDF}",
+          "name": "slope for NDF concentration (centered at 32.9 % DM)",
+          "value": 0.906
+        },
+        {
+          "symbol": "b_{CF}",
+          "name": "slope for crude fat concentration (centered at 4.2 % DM)",
+          "value": 3.871
+        },
+        {
+          "symbol": "b_{starch}",
+          "name": "slope for starch concentration (centered at 21.1 % DM)",
+          "value": -0.337
+        }
+      ],
+      "applicability": "Selected meta-regression model for relative mean difference in methane yield (g/kg DMI) between 3-NOP and control treatments in dairy cattle. Predictors are centered at database means (3-NOP dose 70.5 mg/kg DM, NDF 32.9 % DM, crude fat 4.2 % DM, starch 21.1 % DM). Applicable to lactating dairy cows fed diets within the composition ranges reported in Table 1, and 3-NOP doses between approximately 37 and 137 mg/kg DM.",
+      "model_performance": "Chosen as the selected model based on the smallest root mean square error under leave-one-out cross-validation among candidate models with up to 5 covariates (see Table 3). RMSE = 7.15%.",
+      "text_context": "For CH4 yield, the selected model included 3-NOP dose, dietary NDF and crude fat contents, and dietary starch content with an effect opposite in sign to NDF and crude fat. The equation expresses the percentage change in CH4 yield as deviations of these predictors from their mean values in the meta-analysis.",
+      "links": {
+        "figure_ids": [
+          "Figure 2"
+        ],
+        "table_ids": [
+          "Table 1",
+          "Table 3"
+        ],
+        "supplement_ids": []
+      },
+      "explanation": "This equation models how 3-NOP dose and key dietary fractions shape the percentage reduction in methane yield (g/kg DMI). Positive coefficients for NDF and crude fat indicate that higher fiber and fat reduce the efficacy of 3-NOP, whereas the negative coefficient for starch indicates that more starch enhances mitigation at a given dose. Because all terms are centered, the intercept represents the expected average reduction at typical diet compositions and 3-NOP dose.",
+      "notes": "Outcome is a treatment-control contrast expressed as percent of control methane yield. All explanatory variables are centered to their means as provided in Table 1. Derived from a meta-analysis of treatment means; intended for interpolation within the observed diet and dose ranges, not for extrapolation to very different rations or cattle classes."
+    },
+    {
+      "equation_id": "eq3",
+      "label_in_paper": null,
+      "section": "RESULTS AND DISCUSSION",
+      "page": null,
+      "latex": "Change_{CH_4\\,intensity} (\\%) = -33.0 - 0.275 \\times (\\text{3\\text{-}NOP} - 70.5) + 0.723 \\times (\\text{NDF} - 32.9)",
+      "equation_type": "regression",
+      "domain": "enteric_methane",
+      "target_quantity": {
+        "symbol": "Change_{CH_4\\,intensity}",
+        "name": "relative change in methane intensity",
+        "description": "Relative mean difference (treatment minus control, % of control) in methane intensity per unit of energy-corrected milk due to 3-NOP supplementation",
+        "unit": "% of control",
+        "scale": "group_mean"
+      },
+      "variables": [
+        {
+          "symbol": "3\\text{-}NOP",
+          "name": "3-nitrooxypropanol dose",
+          "unit": "mg/kg DM"
+        },
+        {
+          "symbol": "NDF",
+          "name": "neutral detergent fiber concentration",
+          "unit": "% DM"
+        }
+      ],
+      "parameters": [
+        {
+          "symbol": "Intercept",
+          "name": "overall mean effect at mean 3-NOP dose and NDF concentration",
+          "value": -33.0
+        },
+        {
+          "symbol": "b_{3\\text{-}NOP}",
+          "name": "slope for 3-NOP dose (centered at 70.5 mg/kg DM)",
+          "value": -0.275
+        },
+        {
+          "symbol": "b_{NDF}",
+          "name": "slope for NDF concentration (centered at 32.9 % DM)",
+          "value": 0.723
+        }
+      ],
+      "applicability": "Selected meta-regression model for relative mean difference in methane intensity (g/kg ECM) between 3-NOP and control treatments in dairy cattle. Predictors are centered at the database means of 3-NOP dose (70.5 mg/kg DM) and NDF (32.9 % DM). Applicable mainly to lactating cows producing energy-corrected milk under diets and 3-NOP doses similar to those summarized in Table 1.",
+      "model_performance": "Identified as the selected model with the smallest root mean square error from leave-one-out cross-validation among candidate models (see Table 4). RMSE = 5.94%.",
+      "text_context": "For CH4 intensity, the selected model included 3-NOP dose and dietary NDF content. The effect of 3-NOP dose on CH4 intensity was similar to its effect on CH4 production, whereas the effect of dietary NDF content was slightly lower.",
+      "links": {
+        "figure_ids": [
+          "Figure 2"
+        ],
+        "table_ids": [
+          "Table 1",
+          "Table 4"
+        ],
+        "supplement_ids": []
+      },
+      "explanation": "This equation predicts how 3-NOP dose and dietary fiber modify methane emissions per unit of energy-corrected milk, expressed as a percentage change relative to untreated controls. The negative dose coefficient reflects increasing mitigation with higher 3-NOP, while the positive NDF coefficient shows that high-fiber diets partially offset this benefit. Centering around the mean conditions ensures the intercept corresponds to the typical mitigation achieved in the meta-analysis dataset.",
+      "notes": "Outcome is a treatment-control contrast expressed as percent of control methane intensity. Explanatory variables are centered to their mean values as reported in Table 1. Model is based on study-level treatment means from dairy cattle experiments; its use should be confined to diets and production conditions similar to those in the meta-analysis."
+    }
+  ],
+  "extraction_metadata": {
+    "system_name": "dairy-equation-agent",
+    "system_version": "0.3.0",
+    "llm_backend": "gpt-5.1",
+    "tools_used": [
+      "elsevier_xml_parser"
+    ],
+    "input_doi": "10.3168/jds.2022-22211",
+    "instruction": "\nYou are an expert in dairy science and mathematical modeling. Extract structured information about equations from the provided JSON data and format it according to the template structure.\n\nExtract all equations with their details (variables, parameters, performance metrics, etc.) and paper metadata. Populate all fields according to the template structure.\n\nCRITICAL: Return ONLY valid JSON matching the template structure. No markdown, explanations, or text outside the JSON.\n",
+    "task_id": "task-2025-11-20-001",
+    "processing_time_seconds": 37.302626848220825,
+    "status": "success",
+    "warnings": [
+      "Exact page numbers, equation labels, and model fit statistics (RMSE, R²) were not available in the provided excerpt and are left as null or described qualitatively.",
+      "Units for NDF, crude fat, and starch in the equations are interpreted as g/kg DM even though the text shorthand uses % of DM.",
+      "Confidence intervals for regression coefficients are not reported in the provided material."
+    ],
+    "input_file": "XML_chunker\\Benchmark chunked outputs\\select6\\10.3168_jds.2022-22211_general_dairy_results.json",
+    "timestamp_utc": "2025-12-05T00:19:07.426496+00:00"
+  }
+}

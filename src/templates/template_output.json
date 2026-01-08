@@ -1,0 +1,185 @@
+{
+  "paper": {
+    "doi": "10.3168/jds.2017-12345",
+    "title": "Title of the Paper",
+    "journal": "Journal of Dairy Science",
+    "publisher": "Elsevier",
+    "url": "https://doi.org/10.3168/jds.2017-12345",
+    "year": 2018,
+
+    "authors": [
+      "First A. Author",
+      "Second B. Author"
+    ],
+
+    "abstract": "Abstract text here",
+    "summary": "This paper focuses on developing predictive models for enteric methane emissions in dairy cows. The main model (Eq. 1) is a linear regression equation that predicts daily methane emissions (CH₄, g/d) as a function of dry matter intake (DMI, kg/d) and dietary neutral detergent fiber concentration (NDF, % of DM). The model was developed using individual cow records and demonstrates good predictive performance (R² = 0.71) for lactating Holstein cows in freestall production systems.",
+    "keywords": [
+      "enteric methane",
+      "body weight"
+    ],
+
+    "study_year": "2014–2016",
+    "geolocation": [
+      "United States",
+      "Wisconsin"
+    ],
+
+    "domains": [
+      "enteric_methane",
+      "intake",
+      "genetics",
+      "dairy_production",
+      "microbiome"
+    ],
+
+    "production_system": [
+      "intensive",
+      "freestall"
+    ],
+
+    "species": [
+      "dairy_cow"
+    ],
+    "breed": [
+      "Holstein"
+    ],
+
+    "dairy_product": [
+      "yogurt",
+      "cheese"
+    ],
+
+    "microbe_species": [
+      "Listeria monocytogenes"
+    ],
+
+    "license_type": "CC BY",
+    "tdm_allowed": true
+  },
+  "equations": [
+    {
+      "equation_id": "eq1",
+      "label_in_paper": "(1)",
+      "section": "Materials and Methods",
+      "page": 4,
+      "latex": "CH_4 = a + b \times DMI + c \times NDF",
+      "equation_type": "regression", 
+      "domain": "enteric_methane",
+      "target_quantity": {
+        "symbol": "CH_4",
+        "name": "enteric methane emission",
+        "description": "Daily enteric methane emissions from lactating cows",
+        "unit": "g/d",
+        "scale": "animal" 
+      },
+      "variables": [
+        {
+          "symbol": "DMI",
+          "name": "dry matter intake",
+          "unit": "kg/d"
+        },
+        {
+          "symbol": "NDF",
+          "name": "neutral detergent fiber",
+          "unit": "% of DM"
+        }
+      ],
+      "parameters": [
+        {
+          "symbol": "a",
+          "name": "intercept",
+          "value": 10.5
+        },
+        {
+          "symbol": "b",
+          "name": "DMI slope",
+          "value": 2.3
+        },
+        {
+          "symbol": "c",
+          "name": "NDF slope",
+          "value": 1.1
+        }
+      ],
+      "applicability": "Model applicable to Holstein dairy cows in freestall production systems, parity 1-3+, DIM 60-300 days, in US Midwest. Diet: High-forage TMR with corn silage and alfalfa silage.",
+      "model_performance": "R² = 0.71, RMSE = 2.3 g/d. Model based on individual cow records from 3 herds (210 cows total), validated using random 80/20 train-test split.",
+      "text_context": "Methane emissions were modeled as a function of dry matter intake and dietary NDF concentration (Eq. 1). Parameters of the model were estimated using linear mixed-effects regression with cow as random effect.",
+      "links": {
+        "figure_ids": ["Figure 2"],
+        "table_ids": ["Table 2"],
+        "supplement_ids": []
+      },
+	  "explanation": "write a concise paragraph to explain the relavence to the task and your understand of the extracted equation",
+      "notes": "special instruction of the equation, e.g., model used only for lactating cows; not validated for dry cows."
+    },
+    {
+      "equation_id": "eq2",
+      "label_in_paper": "(2)",
+      "section": "Results",
+      "page": 8,
+      "latex": "MY = a + b \times DIM + c \times DIM^2",
+      "equation_type": "polynomial",
+      "domain": "milk_yield",
+      "target_quantity": {
+        "symbol": "MY",
+        "name": "milk yield",
+        "description": "Daily milk production",
+        "unit": "kg/d",
+        "scale": "animal"
+      },
+      "variables": [
+        {
+          "symbol": "DIM",
+          "name": "days in milk",
+          "unit": "days"
+        }
+      ],
+      "parameters": [
+        {
+          "symbol": "a",
+          "name": "intercept",
+          "value": 25.3
+        },
+        {
+          "symbol": "b",
+          "name": "linear coefficient",
+          "value": 0.15
+        },
+        {
+          "symbol": "c",
+          "name": "quadratic coefficient",
+          "value": -0.0002
+        }
+      ],
+      "applicability": "Model for Holstein cows in early to mid-lactation, DIM 5-200 days, in conventional freestall systems.",
+      "model_performance": "R² = 0.68, RMSE = 2.1 kg/d. Model fitted to 450 lactation records from 2 commercial dairy farms.",
+      "text_context": "Milk yield was modeled as a quadratic function of days in milk to capture the typical lactation curve pattern (Eq. 2). The model accounts for peak production around 60-80 DIM followed by gradual decline.",
+      "links": {
+        "figure_ids": ["Figure 3"],
+        "table_ids": ["Table 3"],
+        "supplement_ids": []
+      },
+      "explanation": "write a concise paragraph to explain the relavence to the task and your understand of the extracted equation",
+      "notes": "Model validated for primiparous and multiparous cows separately."
+    }
+  ],
+  "extraction_metadata": {
+    "system_name": "dairy-equation-agent",
+    "system_version": "0.3.0",
+    "llm_backend": "gpt-4.1-mini",
+    "tools_used": [
+      "crossref_api",
+      "elsevier_xml_parser"
+    ],
+    "input_doi": "10.3168/jds.2017-12345",
+    "instruction": "Extract all equations related to enteric methane emission.",
+    "task_id": "task-2025-11-20-001",
+    "processing_time_seconds": 23.4,
+    "status": "success",
+    "warnings": [
+      "No explicit confidence intervals reported for parameter c."
+    ]
+  }
+}
+

@@ -1,0 +1,505 @@
+{
+  "paper": {
+    "doi": "10.3168/jds.2025-26960",
+    "title": "A meta-analysis of effects of seaweed and other bromoform-containing feed ingredients on methane production, yield, and intensity in cattle",
+    "journal": "Journal of Dairy Science",
+    "publisher": "Elsevier",
+    "url": "https://doi.org/10.3168/jds.2025-26960",
+    "year": 2025,
+    "authors": [
+      "Ermias Kebreab",
+      "Eleanor May Pressman",
+      "John-Fredy Ramirez-Agudelo",
+      "André Bannink",
+      "Sanne van Gastelen",
+      "Jan Dijkstra"
+    ],
+    "abstract": "Methane (CH 4 ) emissions from ruminants contribute significantly to global GHG emissions. Bromoform (CHBr 3 )-containing feed ingredients, such as  Asparagopsis  seaweed, have emerged as promising tools to reduce enteric CH 4  emissions. This meta-analysis quantitatively assessed the effects of CHBr 3 -containing seaweeds and synthetic CHBr 3 -based additives on CH 4  production (g/d), CH 4  yield (g/kg DMI) and DMI, as well as CH 4  intensity (g/kg product) and production (milk or daily gain in dairy and beef cattle, respectively). Data were collected from 14 studies, with 39 treatment mean differences for CH 4  production, comprising both beef and dairy cattle fed CHBr 3 -containing ingredients, while accounting for dose, DMI, and diet composition. The random-effects model's estimates revealed that at an average CHBr 3  dose of \u0001928.3 mg/kg DM, CH 4  production was reduced by 47.3%, CH 4  yield by 43.3%, and CH 4  intensity by 39.0%, with increases in the CHBr 3  dose resulting in larger efficacy in mitigating CH 4  emissions. The efficacy of CHBr 3  was influenced by cattle type, with greater mitigation effects in beef cattle than dairy cattle, and by dietary composition, with greater reductions observed in diets higher in starch, whereas higher NDF levels attenuated the effect of CHBr 3 . At the average CHBr 3  dose, estimated DMI was significantly reduced by 6.45% and 3.26% in dairy and beef cattle, respectively, with increases in CHBr 3  dose resulting in larger DMI reductions. The significant reduction in DMI did translate into a significant effect on milk yield (\u001924.60%) at average CHBr 3  dose. Carrier type (oil vs. biomass), measurement technique, and cattle type influenced the results. The use of an oil carrier was associated with more pronounced reductions, particularly in CH 4  intensity. Additionally, respiration chambers yielded significantly greater CH 4  reductions compared with other measurement methods. This study highlights the CH 4 -mitigating potential of feed ingredients containing CHBr 3 , providing predictive models to optimize CH 4  reduction strategies under diverse production conditions. Future research should address long-term effects, dietary optimization, and practical implementation.",
+    "summary": "This meta-analysis develops predictive meta-regression equations for the relative mean difference (RMD, %) in methane (CH\\_4) production, yield, and intensity in cattle receiving bromoform (CHBr\\_3)-containing feed ingredients, as well as for RMD in dry matter intake (DMI) and product output (milk, ECM, average daily gain). Key equations express percentage change in CH\\_4 outcomes as linear functions of a centered natural-log-transformed CHBr\\_3 dose and centered dietary starch concentration, with separate intercepts for dairy and beef cattle. Additional fitted models explore the influence of NDF, DMI, dietary fat (CFAT), and quadratic terms in CHBr\\_3. Model performance statistics (I^2, AIC, BIC, CCC, RMSE) are reported from mixed-effects meta-regressions fitted to 14 studies (39 comparisons) across dairy and beef cattle. The equations are intended for predicting CHBr\\_3 mitigation responses under varying production conditions rather than for daily cow-level CH\\_4 inventories.",
+    "keywords": [
+      "seaweed",
+      "bromoform",
+      "meta-analysis",
+      "methane"
+    ],
+    "study_year": "2025",
+    "geolocation": [],
+    "domains": [
+      "enteric_methane",
+      "intake",
+      "milk",
+      "energy_corrected_milk",
+      "average_daily_gain",
+      "dairy_production"
+    ],
+    "production_system": [],
+    "species": [
+      "dairy_cow",
+      "beef_cattle"
+    ],
+    "breed": [],
+    "dairy_product": [],
+    "microbe_species": [],
+    "license_type": null,
+    "tdm_allowed": null
+  },
+  "equations": [
+    {
+      "equation_id": "eq1",
+      "label_in_paper": "formula10",
+      "section": "MATERIALS AND METHODS - Effect Size Calculation",
+      "page": null,
+      "latex": "RMD = \\left( \\frac{\\overline{Y}_T - \\overline{Y}_C}{\\overline{Y}_C} \\right) \\times 100",
+      "equation_type": "methodology",
+      "domain": null,
+      "target_quantity": {
+        "symbol": "RMD",
+        "name": "relative mean difference",
+        "description": "Relative mean difference between treatment and control means for a given outcome (e.g., CH4 production, CH4 yield, CH4 intensity, DMI, product output)",
+        "unit": "%",
+        "scale": "comparison_mean"
+      },
+      "variables": [
+        {
+          "symbol": "\\overline{Y}_T",
+          "name": "treatment mean response",
+          "unit": "same as outcome (e.g., g/d, g/kg DMI, g/kg product, kg/d)"
+        },
+        {
+          "symbol": "\\overline{Y}_C",
+          "name": "control mean response",
+          "unit": "same as outcome (e.g., g/d, g/kg DMI, g/kg product, kg/d)"
+        }
+      ],
+      "parameters": [],
+      "applicability": "Definition of the relative mean difference effect size used for all meta-analyses in this study, including methane production, methane yield, methane intensity, DMI, and product output in dairy and beef cattle.",
+      "model_performance": null,
+      "text_context": "RMD was calculated as (treatment mean – control treatment mean)/control treatment mean × 100 for each comparison, providing a standardized percentage change outcome across studies.",
+      "links": {
+        "figure_ids": [
+          "Figure 2"
+        ],
+        "table_ids": [
+          "Table 1",
+          "Table 2",
+          "Table 3",
+          "Table 4",
+          "Table 5",
+          "Table 6",
+          "Table 7"
+        ],
+        "supplement_ids": []
+      },
+      "explanation": "This equation defines the relative mean difference (RMD), the core effect-size metric used throughout the meta-analysis. All subsequent predictive equations model RMD (%) as a function of CHBr\\_3 dose and dietary or animal covariates, so understanding this definition is essential for interpreting the direction and magnitude of predicted methane, intake, and production changes.",
+      "notes": "Used generically for any continuous outcome. Negative RMD denotes a reduction in the outcome for CHBr\\_3-treated groups relative to controls."
+    },
+    {
+      "equation_id": "eq2",
+      "label_in_paper": "formula20",
+      "section": "MATERIALS AND METHODS - Effect Size Calculation",
+      "page": null,
+      "latex": "\\mathrm{Var}(RMD) \\approx 100^2 \\times \\left[ \\frac{1}{\\overline{Y}_C^2} \\, \\mathrm{Var}(\\overline{Y}_T) + \\left( \\frac{\\overline{Y}_T}{\\overline{Y}_C^2} \\right)^{2} \\, \\mathrm{Var}(\\overline{Y}_C) \\right]",
+      "equation_type": "methodology",
+      "domain": null,
+      "target_quantity": {
+        "symbol": "\\mathrm{Var}(RMD)",
+        "name": "variance of relative mean difference",
+        "description": "Approximate sampling variance of the relative mean difference effect size",
+        "unit": "%^2",
+        "scale": "comparison_mean"
+      },
+      "variables": [
+        {
+          "symbol": "\\overline{Y}_T",
+          "name": "treatment mean response",
+          "unit": "same as outcome"
+        },
+        {
+          "symbol": "\\overline{Y}_C",
+          "name": "control mean response",
+          "unit": "same as outcome"
+        },
+        {
+          "symbol": "\\mathrm{Var}(\\overline{Y}_T)",
+          "name": "variance of treatment mean",
+          "unit": "outcome^2"
+        },
+        {
+          "symbol": "\\mathrm{Var}(\\overline{Y}_C)",
+          "name": "variance of control mean",
+          "unit": "outcome^2"
+        }
+      ],
+      "parameters": [],
+      "applicability": "Used for approximating the sampling variance of RMD for all outcomes in the meta-analysis when fitting mixed-effects meta-regression models.",
+      "model_performance": null,
+      "text_context": "The variance of RMD was approximated using the delta method based on the variances of the treatment and control means for each comparison.",
+      "links": {
+        "figure_ids": [],
+        "table_ids": [
+          "Table 1",
+          "Table 2",
+          "Table 3",
+          "Table 4",
+          "Table 5",
+          "Table 6",
+          "Table 7"
+        ],
+        "supplement_ids": []
+      },
+      "explanation": "This variance approximation underpins the weighting scheme in the mixed-effects meta-regressions. By expressing Var(RMD) in terms of the variances of the treatment and control means, the model can appropriately account for differing precision across comparisons when estimating methane and intake response functions.",
+      "notes": "Exact layout is reconstructed from MathML; algebraically equivalent formulations of the delta-method approximation may appear in the text."
+    },
+    {
+      "equation_id": "eq3",
+      "label_in_paper": "formula30",
+      "section": "RESULTS AND DISCUSSION - Methane Production, Yield, and Intensity",
+      "page": null,
+      "latex": "\\text{Change }(\\%)\\text{ in CH}_4\\text{ production} = (\\text{dairy or beef estimate}) - 26.6\\,(\\ln(\\text{CHBr}_3\\ \\text{dose}) - \\overline{\\ln(\\text{CHBr}_3\\ \\text{dose})}) - 0.764\\,(\\text{starch} - \\overline{\\text{starch}})",
+      "equation_type": "regression",
+      "domain": "enteric_methane",
+      "target_quantity": {
+        "symbol": "RMD_{CH4\\,prod}",
+        "name": "relative mean difference in CH4 production",
+        "description": "Percent change in methane production (g/d) between CHBr\\_3-treated and control cattle",
+        "unit": "%",
+        "scale": "treatment_mean_difference"
+      },
+      "variables": [
+        {
+          "symbol": "\\ln(\\text{CHBr}_3\\ \\text{dose})",
+          "name": "natural log of CHBr3 dose",
+          "unit": "ln(mg CHBr3/kg DM)"
+        },
+        {
+          "symbol": "\\overline{\\ln(\\text{CHBr}_3\\ \\text{dose})}",
+          "name": "mean natural log of CHBr3 dose (within cattle type)",
+          "unit": "ln(mg CHBr3/kg DM)"
+        },
+        {
+          "symbol": "starch",
+          "name": "dietary starch concentration",
+          "unit": "% of DM"
+        },
+        {
+          "symbol": "\\overline{starch}",
+          "name": "mean dietary starch concentration (within cattle type)",
+          "unit": "% of DM"
+        }
+      ],
+      "parameters": [
+        {
+          "symbol": "b_{\\ln dose}",
+          "name": "slope for centered ln(CHBr3 dose)",
+          "value": -26.6
+        },
+        {
+          "symbol": "b_{starch}",
+          "name": "slope for centered starch",
+          "value": -0.764
+        },
+        {
+          "symbol": "\\text{dairy intercept}",
+          "name": "intercept (RMD at mean ln dose and mean starch) for dairy",
+          "value": -24.8
+        },
+        {
+          "symbol": "\\text{beef intercept}",
+          "name": "intercept (RMD at mean ln dose and mean starch) for beef",
+          "value": -61.2
+        }
+      ],
+      "applicability": "Applies to relative mean difference in methane production (g/d) for dairy and beef cattle given CHBr3-containing seaweed or synthetic CHBr3 additives. Covariates are centered within cattle type as described in Table 1; ln(CHBr3 dose) is based on mg/kg DM. Data cover 39 comparisons from 14 studies with a range of starch contents and CHBr3 doses.",
+      "model_performance": "Best-fitting CH4 production model with starch (Type + CHBr3 + Starch) reported I^2 = 76.1%, AIC = 298, BIC = 306, CCC = 0.863, RMSE = 16.4 percentage points of RMD, with outliers (studies 10 and 11) removed as indicated in Table 3.",
+      "text_context": "The mixed-effects meta-regression incorporating cattle type, ln-transformed centered CHBr3 dose, and centered dietary starch was used to predict RMD in CH4 production. Change (%) in CH4 production is expressed as a function of deviations from the mean ln(CHBr3) dose and mean starch level.",
+      "links": {
+        "figure_ids": [
+          "Figure 2"
+        ],
+        "table_ids": [
+          "Table 1",
+          "Table 3"
+        ],
+        "supplement_ids": []
+      },
+      "explanation": "This equation is the primary predictive model for how methane production (g/d) responds, in percentage terms, to CHBr\\_3 dose and dietary starch. It allows separate baseline responses for dairy and beef cattle while quantifying stronger CH4 mitigation at higher CHBr\\_3 doses and in higher-starch, lower-fiber diets.",
+      "notes": "RMD is equivalent to the 'Change (%) in CH4 production' reported. All non-type covariates are centered within dairy and beef subsets; the model is linear in centered ln dose and starch."
+    },
+    {
+      "equation_id": "eq4",
+      "label_in_paper": "formula40",
+      "section": "RESULTS AND DISCUSSION - Methane Production, Yield, and Intensity",
+      "page": null,
+      "latex": "\\text{Change }(\\%)\\text{ in CH}_4\\text{ yield} = (\\text{dairy or beef estimate}) - 23.4\\,(\\ln(\\text{CHBr}_3\\ \\text{dose}) - \\overline{\\ln(\\text{CHBr}_3\\ \\text{dose})}) - 0.798\\,(\\text{starch} - \\overline{\\text{starch}})",
+      "equation_type": "regression",
+      "domain": "enteric_methane",
+      "target_quantity": {
+        "symbol": "RMD_{CH4\\,yield}",
+        "name": "relative mean difference in CH4 yield",
+        "description": "Percent change in methane yield (g/kg DMI) between CHBr\\_3-treated and control cattle",
+        "unit": "%",
+        "scale": "treatment_mean_difference"
+      },
+      "variables": [
+        {
+          "symbol": "\\ln(\\text{CHBr}_3\\ \\text{dose})",
+          "name": "natural log of CHBr3 dose",
+          "unit": "ln(mg CHBr3/kg DM)"
+        },
+        {
+          "symbol": "\\overline{\\ln(\\text{CHBr}_3\\ \\text{dose})}",
+          "name": "mean natural log of CHBr3 dose (within cattle type)",
+          "unit": "ln(mg CHBr3/kg DM)"
+        },
+        {
+          "symbol": "starch",
+          "name": "dietary starch concentration",
+          "unit": "% of DM"
+        },
+        {
+          "symbol": "\\overline{starch}",
+          "name": "mean dietary starch concentration (within cattle type)",
+          "unit": "% of DM"
+        }
+      ],
+      "parameters": [
+        {
+          "symbol": "b_{\\ln dose}",
+          "name": "slope for centered ln(CHBr3 dose)",
+          "value": -23.4
+        },
+        {
+          "symbol": "b_{starch}",
+          "name": "slope for centered starch",
+          "value": -0.798
+        },
+        {
+          "symbol": "\\text{dairy intercept}",
+          "name": "intercept (RMD at mean ln dose and mean starch) for dairy",
+          "value": -22.5
+        },
+        {
+          "symbol": "\\text{beef intercept}",
+          "name": "intercept (RMD at mean ln dose and mean starch) for beef",
+          "value": -56.0
+        }
+      ],
+      "applicability": "Applies to relative mean difference in methane yield (g/kg DMI) for dairy and beef cattle under CHBr3 supplementation, using ln-transformed dose and dietary starch centered within cattle type. Based on 38 comparisons from 13 studies as summarized in Table 1 and model comparisons in Table 4.",
+      "model_performance": "For the CH4 yield model 'Type + CHBr3 + Starch', I^2 = 71.6%, AIC = 275, BIC = 283, CCC = 0.868, RMSE = 15.2 percentage points of RMD, with outliers (10, 11, 24) removed.",
+      "text_context": "Change (%) in CH4 yield was modeled as a linear function of centered ln(CHBr3 dose) and centered starch, with separate intercepts for dairy and beef. Starch emerged as a robust predictor in the Bayesian and frequentist analyses.",
+      "links": {
+        "figure_ids": [
+          "Figure 2"
+        ],
+        "table_ids": [
+          "Table 1",
+          "Table 4"
+        ],
+        "supplement_ids": []
+      },
+      "explanation": "This equation describes how methane yield per unit of intake responds to CHBr\\_3 and dietary starch, again with distinct dairy and beef baselines. It is central for translating CHBr\\_3 strategies into expected reductions in emission intensity per kilogram of feed consumed.",
+      "notes": "RMD is reported as 'Change (%) in CH4 yield'. Starch and ln dose are centered within cattle type as per Table 1."
+    },
+    {
+      "equation_id": "eq5",
+      "label_in_paper": "formula50",
+      "section": "RESULTS AND DISCUSSION - Methane Production, Yield, and Intensity",
+      "page": null,
+      "latex": "\\text{Change }(\\%)\\text{ in CH}_4\\text{ intensity} = (\\text{dairy or beef estimate}) - 27.1\\,(\\ln(\\text{CHBr}_3\\ \\text{dose}) - \\overline{\\ln(\\text{CHBr}_3\\ \\text{dose})}) - 0.616\\,(\\text{starch} - \\overline{\\text{starch}})",
+      "equation_type": "regression",
+      "domain": "enteric_methane",
+      "target_quantity": {
+        "symbol": "RMD_{CH4\\,intensity}",
+        "name": "relative mean difference in CH4 intensity",
+        "description": "Percent change in methane intensity (g/kg milk, ECM, or ADG) between CHBr\\_3-treated and control animals",
+        "unit": "%",
+        "scale": "treatment_mean_difference"
+      },
+      "variables": [
+        {
+          "symbol": "\\ln(\\text{CHBr}_3\\ \\text{dose})",
+          "name": "natural log of CHBr3 dose",
+          "unit": "ln(mg CHBr3/kg DM)"
+        },
+        {
+          "symbol": "\\overline{\\ln(\\text{CHBr}_3\\ \\text{dose})}",
+          "name": "mean natural log of CHBr3 dose (within cattle type)",
+          "unit": "ln(mg CHBr3/kg DM)"
+        },
+        {
+          "symbol": "starch",
+          "name": "dietary starch concentration",
+          "unit": "% of DM"
+        },
+        {
+          "symbol": "\\overline{starch}",
+          "name": "mean dietary starch concentration (within cattle type)",
+          "unit": "% of DM"
+        }
+      ],
+      "parameters": [
+        {
+          "symbol": "b_{\\ln dose}",
+          "name": "slope for centered ln(CHBr3 dose)",
+          "value": -27.1
+        },
+        {
+          "symbol": "b_{starch}",
+          "name": "slope for centered starch",
+          "value": -0.616
+        },
+        {
+          "symbol": "\\text{dairy intercept}",
+          "name": "intercept (RMD at mean ln dose and mean starch) for dairy",
+          "value": -25.6
+        },
+        {
+          "symbol": "\\text{beef intercept}",
+          "name": "intercept (RMD at mean ln dose and mean starch) for beef",
+          "value": -45.6
+        }
+      ],
+      "applicability": "Applies to relative mean difference in methane intensity (g/kg product: milk, ECM, or ADG) across dairy and beef cattle supplemented with CHBr3, using centered ln dose and starch. Based on 30 comparisons from 10 studies as outlined in Table 1 and model comparisons in Table 5.",
+      "model_performance": "For CH4 intensity, the 'Type + CHBr3 + Starch' model achieved I^2 = 9.05%, AIC = 192, BIC = 198, CCC = 0.866, RMSE = 13.0 percentage points of RMD, with outliers 18, 20, and 21 removed.",
+      "text_context": "Change (%) in CH4 intensity was modeled using cattle type, ln-transformed CHBr3 dose, and dietary starch, revealing greater reductions at higher CHBr3 doses and in higher-starch diets with relatively low heterogeneity.",
+      "links": {
+        "figure_ids": [
+          "Figure 2"
+        ],
+        "table_ids": [
+          "Table 1",
+          "Table 5"
+        ],
+        "supplement_ids": []
+      },
+      "explanation": "This equation captures how CHBr\\_3 and diet jointly affect methane emissions per unit of product (milk or gain), which is crucial for greenhouse gas intensity metrics. The low heterogeneity and good CCC suggest it is a robust predictor for integrating CHBr\\_3 effects into farm-level or national GHG inventories.",
+      "notes": "RMD is reported as 'Change (%) in CH4 intensity'. Intercepts differ by cattle type and correspond to centered covariates."
+    },
+    {
+      "equation_id": "eq6",
+      "label_in_paper": "DMI model (Table 6)",
+      "section": "RESULTS AND DISCUSSION - DMI and Product Output",
+      "page": null,
+      "latex": "RMD_{DMI} = (\\text{dairy or beef estimate}) - 0.269\\,\\text{CHBr}_3\\ \\text{dose}",
+      "equation_type": "regression",
+      "domain": "intake",
+      "target_quantity": {
+        "symbol": "RMD_{DMI}",
+        "name": "relative mean difference in DMI",
+        "description": "Percent change in dry matter intake (kg/d) between CHBr\\_3-treated and control cattle",
+        "unit": "%",
+        "scale": "treatment_mean_difference"
+      },
+      "variables": [
+        {
+          "symbol": "CHBr_3\\ \\text{dose}",
+          "name": "bromoform dose in diet",
+          "unit": "mg/kg DM"
+        }
+      ],
+      "parameters": [
+        {
+          "symbol": "b_{dose}",
+          "name": "slope for CHBr3 dose",
+          "value": -0.269
+        },
+        {
+          "symbol": "\\text{dairy intercept}",
+          "name": "intercept for dairy (RMD at zero dose)",
+          "value": -6.45
+        },
+        {
+          "symbol": "\\text{beef intercept}",
+          "name": "intercept for beef (RMD at zero dose)",
+          "value": -3.26
+        }
+      ],
+      "applicability": "Applies to RMD in DMI (kg/d) for dairy and beef cattle receiving CHBr\\_3-containing feeds. Dose is on the original mg/kg DM scale, not ln-transformed. Model labeled 'DMI: Type + CHBr\\_3' in Table 6, using data from 39 comparisons across 14 studies.",
+      "model_performance": "I^2 = 39.5%, AIC = 232, BIC = 238, CCC = 0.643, RMSE = 5.73 percentage points of RMD, with outliers 20 and 31 removed.",
+      "text_context": "The model 'Type + CHBr\\_3' was used to relate CHBr\\_3 dose directly to the relative mean difference in DMI, showing significant reductions in intake at increasing dose levels for both dairy and beef cattle.",
+      "links": {
+        "figure_ids": [],
+        "table_ids": [
+          "Table 2",
+          "Table 6"
+        ],
+        "supplement_ids": []
+      },
+      "explanation": "This equation quantifies how CHBr\\_3 reduces feed intake, which is critical when interpreting methane reductions versus possible negative impacts on performance. It provides separate baseline intake responses for dairy and beef cattle and a common linear dose-response.",
+      "notes": "Unlike the CH4 models, CHBr\\_3 dose here is not log-transformed or centered. Intercepts correspond to extrapolated RMD at zero CHBr\\_3 dose."
+    },
+    {
+      "equation_id": "eq7",
+      "label_in_paper": "Product model (Table 6)",
+      "section": "RESULTS AND DISCUSSION - DMI and Product Output",
+      "page": null,
+      "latex": "RMD_{product} = (\\text{dairy or beef estimate}) - 0.331\\,\\text{CHBr}_3\\ \\text{dose}",
+      "equation_type": "regression",
+      "domain": "milk, energy_corrected_milk, average_daily_gain",
+      "target_quantity": {
+        "symbol": "RMD_{product}",
+        "name": "relative mean difference in product output",
+        "description": "Percent change in product output (milk, ECM, or ADG; kg/d) between CHBr\\_3-treated and control animals",
+        "unit": "%",
+        "scale": "treatment_mean_difference"
+      },
+      "variables": [
+        {
+          "symbol": "CHBr_3\\ \\text{dose}",
+          "name": "bromoform dose in diet",
+          "unit": "mg/kg DM"
+        }
+      ],
+      "parameters": [
+        {
+          "symbol": "b_{dose}",
+          "name": "slope for CHBr3 dose",
+          "value": -0.331
+        },
+        {
+          "symbol": "\\text{dairy intercept}",
+          "name": "intercept for dairy (RMD at zero dose)",
+          "value": -4.6
+        },
+        {
+          "symbol": "\\text{beef intercept}",
+          "name": "intercept for beef (RMD at zero dose)",
+          "value": 0.858
+        }
+      ],
+      "applicability": "Applies to RMD in product output (milk or ECM in dairy; average daily gain in beef) for cattle supplemented with CHBr\\_3, with dose on the mg/kg DM scale. Model 'Product: Type + CHBr\\_3' in Table 6 uses 36 comparisons (14 dairy, 22 beef).",
+      "model_performance": "I^2 = 22.6%, AIC = 244, BIC = 250, CCC = 0.186, RMSE = 14.3 percentage points of RMD, with outliers 8, 15, 23, and 37 removed.",
+      "text_context": "The mixed-effects meta-regression relating CHBr\\_3 dose to RMD in product output showed a significant negative association overall, driven mainly by reductions in milk yield at higher CHBr\\_3 doses in dairy cattle.",
+      "links": {
+        "figure_ids": [],
+        "table_ids": [
+          "Table 2",
+          "Table 6"
+        ],
+        "supplement_ids": []
+      },
+      "explanation": "This model links CHBr\\_3 dose directly to changes in milk or gain, allowing evaluation of potential trade-offs between methane mitigation and productivity. The more negative slope versus the DMI model highlights that production can decline slightly more steeply than intake as dose increases.",
+      "notes": "Dose is not ln-transformed; intercepts represent extrapolated zero-dose RMD. The low CCC indicates substantial unexplained variability in product responses."
+    }
+  ],
+  "extraction_metadata": {
+    "system_name": "dairy-equation-agent",
+    "system_version": "0.3.0",
+    "llm_backend": "gpt-5.1",
+    "tools_used": [
+      "elsevier_xml_parser"
+    ],
+    "input_doi": "10.3168/jds.2025-26960",
+    "instruction": "\nYou are an expert in dairy science and mathematical modeling. Extract structured information about equations from the provided JSON data and format it according to the template structure.\n\nExtract all equations with their details (variables, parameters, performance metrics, etc.) and paper metadata. Populate all fields according to the template structure.\n\nCRITICAL: Return ONLY valid JSON matching the template structure. No markdown, explanations, or text outside the JSON.\n",
+    "task_id": "task-2025-12-05-001",
+    "processing_time_seconds": 66.54210257530212,
+    "status": "success",
+    "warnings": [
+      "Exact page numbers for equations not available in XML, set to null.",
+      "Intercept mapping for dairy and beef derived from Table 3, 4, 5, and 6; equations in text only provide generic '(dairy or beef estimate)'.",
+      "No explicit confidence intervals reported for some parameter estimates in the main text."
+    ],
+    "input_file": "XML_chunker\\Benchmark chunked outputs\\select6\\10.3168_jds.2025-26960_general_dairy_results.json",
+    "timestamp_utc": "2025-12-05T00:24:03.050452+00:00"
+  }
+}
